@@ -1,0 +1,20 @@
+{
+    "name": "tiktok-downloader-bot",
+    "version": "0.0.0",
+    "license": "MIT",
+    "main": "dist/app.js",
+    "scripts": {
+        "dev": "tsx watch src/app.ts",
+        "build": "tsc",
+        "start": "node dist/app.js"
+    },
+    "devDependencies": {
+        "@types/node": "^22.8.7",
+        "tsx": "^4.7.2",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "puppeteer": "^23.7.0",
+        "telegraf": "^4.16.3"
+    }
+}
