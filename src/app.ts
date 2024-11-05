@@ -25,11 +25,6 @@ async function getTikTokVideoBuffer(url: string) {
 	return videoBuffer;
 }
 
-bot.command('v', async (ctx) => {
-	const b = await getTikTokVideoBuffer('https://vm.tiktok.com/ZMhX3XRxq/');
-	ctx.replyWithVideo({ source: b });
-});
-
 bot.hears(/https:\/\/vm.tiktok.com\/(\w+)\//, async (ctx) => {
 	const message = await ctx.reply('Processing...', {
 		reply_parameters: {
